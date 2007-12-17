@@ -21,7 +21,6 @@ Requires:	php-pear-SOAP >= 0.7.5
 Requires:	php-pear-XML_Serializer >= 0.8
 BuildArch:	noarch
 BuildRequires:	dos2unix
-BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
 Services_Weather searches for given locations and retrieves current
