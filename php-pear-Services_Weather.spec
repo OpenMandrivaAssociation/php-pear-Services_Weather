@@ -5,12 +5,12 @@
 
 Summary:	%{_pearname} - an interface to various online weather-services
 Name:		php-pear-%{_pearname}
-Version:	1.4.2
-Release:	%mkrel 3
+Version:	1.4.3
+Release:	%mkrel 1
 License:	PHP License
 Group:		Development/PHP
 URL:		http://pear.php.net/package/Services_Weather/
-Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tar.bz2
+Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 Requires(post): php-pear
 Requires(preun): php-pear
 Requires:	php-pear
@@ -21,7 +21,7 @@ Requires:	php-pear-SOAP >= 0.7.5
 Requires:	php-pear-XML_Serializer >= 0.8
 BuildArch:	noarch
 BuildRequires:	dos2unix
-BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 Services_Weather searches for given locations and retrieves current
@@ -91,5 +91,3 @@ rm -rf %{buildroot}
 %{_datadir}/pear/%{_class}/*.php
 %{_datadir}/pear/%{_class}/%{_subclass}
 %{_datadir}/pear/packages/%{_pearname}.xml
-
-
