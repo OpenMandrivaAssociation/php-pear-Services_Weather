@@ -5,8 +5,8 @@
 
 Summary:	%{_pearname} - an interface to various online weather-services
 Name:		php-pear-%{_pearname}
-Version:	1.4.3
-Release:	%mkrel 2
+Version:	1.4.4
+Release:	%mkrel 1
 License:	PHP License
 Group:		Development/PHP
 URL:		http://pear.php.net/package/Services_Weather/
