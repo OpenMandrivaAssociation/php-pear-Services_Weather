@@ -3,8 +3,8 @@
 %define		upstream_name	%{_class}_%{_subclass}
 
 Name:		php-pear-%{upstream_name}
-Version:	1.4.4
-Release:	%mkrel 3
+Version:	1.4.5
+Release:	%mkrel 1
 Summary:	An interface to various online weather-services
 License:	PHP License
 Group:		Development/PHP
