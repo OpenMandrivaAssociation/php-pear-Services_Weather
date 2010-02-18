@@ -4,7 +4,7 @@
 
 Name:		php-pear-%{upstream_name}
 Version:	1.4.5
-Release:	%mkrel 2
+Release:	%mkrel 3
 Summary:	An interface to various online weather-services
 License:	PHP License
 Group:		Development/PHP
@@ -51,7 +51,7 @@ rm -rf %{buildroot}%{_datadir}/pear/tests
 
 install -d %{buildroot}%{_datadir}/pear/packages
 install -m 644 %{upstream_name}.xml %{buildroot}%{_datadir}/pear/packages
-install -m 644 Weather.php  %{buildroot}%{_datadir}/pear/Services/Weather/
+install -m 644 Weather.php  %{buildroot}%{_datadir}/pear/Services/
 install -m 644 Weather/*.php %{buildroot}%{_datadir}/pear/Services/Weather/
 
 %clean
