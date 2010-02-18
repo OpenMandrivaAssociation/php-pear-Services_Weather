@@ -4,7 +4,7 @@
 
 Name:		php-pear-%{upstream_name}
 Version:	1.4.5
-Release:	%mkrel 3
+Release:	%mkrel 5
 Summary:	An interface to various online weather-services
 License:	PHP License
 Group:		Development/PHP
@@ -78,3 +78,5 @@ fi
 %{_datadir}/pear/%{_class}
 %{_datadir}/pear/packages/%{upstream_name}.xml
 %{_datadir}/pear/Services/Weather/*
+%{_datadir}/pear/Services/Weather.php
+
