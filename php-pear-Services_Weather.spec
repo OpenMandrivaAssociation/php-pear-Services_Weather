@@ -4,7 +4,7 @@
 
 Name:		php-pear-%{upstream_name}
 Version:	1.4.5
-Release:	%mkrel 5
+Release:	%mkrel 6
 Summary:	An interface to various online weather-services
 License:	PHP License
 Group:		Development/PHP
@@ -18,10 +18,11 @@ Requires:	php-pear-DB >= 1.4
 Requires:	php-pear-HTTP_Request >= 1.2
 Requires:	php-pear-SOAP >= 0.7.5
 Requires:	php-pear-XML_Serializer >= 0.8
+Requires:	php-pear-Net_FTP
 BuildArch:	noarch
 BuildRequires:	php-pear
 BuildRoot:	%{_tmppath}/%{name}-%{version}
-AutoReqProv: 0
+
 
 %description
 Services_Weather searches for given locations and retrieves current
@@ -52,6 +53,7 @@ rm -rf %{buildroot}%{_datadir}/pear/tests
 install -d %{buildroot}%{_datadir}/pear/packages
 install -m 644 %{upstream_name}.xml %{buildroot}%{_datadir}/pear/packages
 install -m 644 Weather.php  %{buildroot}%{_datadir}/pear/Services/
+install -m 644 buildMetarDB.php  %{buildroot}%{_datadir}/pear/Services/
 install -m 644 Weather/*.php %{buildroot}%{_datadir}/pear/Services/Weather/
 
 %clean
