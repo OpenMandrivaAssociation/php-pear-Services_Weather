@@ -4,7 +4,7 @@
 
 Name:		php-pear-%{upstream_name}
 Version:	1.4.5
-Release:	%mkrel 6
+Release:	%mkrel 7
 Summary:	An interface to various online weather-services
 License:	PHP License
 Group:		Development/PHP
@@ -21,7 +21,6 @@ Requires:	php-pear-XML_Serializer >= 0.8
 Requires:	php-pear-Net_FTP
 BuildArch:	noarch
 BuildRequires:	php-pear
-BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 
 %description
