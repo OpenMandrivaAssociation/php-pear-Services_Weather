@@ -40,7 +40,6 @@ sed 's#/usr/local/bin/php#/usr/bin/php#' buildMetarDB.php >> tmp
 mv -f tmp buildMetarDB.php
 
 %install
-rm -rf %{buildroot}
 
 cd %{upstream_name}-%{version}
 pear install --nodeps --packagingroot %{buildroot} %{upstream_name}.xml
@@ -56,7 +55,6 @@ install -m 644 buildMetarDB.php  %{buildroot}%{_datadir}/pear/Services/
 install -m 644 Weather/*.php %{buildroot}%{_datadir}/pear/Services/Weather/
 
 %clean
-rm -rf %{buildroot}
 
 
 
