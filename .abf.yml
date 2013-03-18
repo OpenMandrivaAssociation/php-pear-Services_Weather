@@ -1,2 +1,4 @@
+removed_sources:
+  Services_Weather-1.4.5.tgz: db637d0f359472c51c045f6f80390ae6d57ebad9
 sources:
-  "Services_Weather-1.4.5.tgz": db637d0f359472c51c045f6f80390ae6d57ebad9
+  Services_Weather-1.4.7.tgz: 3be1dbbcae6b6c5964bd91d03dad6b3925bafb1c
