@@ -3,13 +3,13 @@
 %define		upstream_name	%{_class}_%{_subclass}
 
 Name:		php-pear-%{upstream_name}
-Version:	1.4.5
-Release:	11
+Version:	1.4.7
+Release:	1
 Summary:	An interface to various online weather-services
 License:	PHP License
 Group:		Development/PHP
 URL:		http://pear.php.net/package/Services_Weather/
-Source0:	http://download.pear.php.net/package/%{upstream_name}-%{version}.tgz
+Source0:	http://download.pear.php.net/package/Services_Weather-%{version}.tgz
 Requires(post): php-pear
 Requires(preun): php-pear
 Requires:	php-pear
@@ -174,4 +174,5 @@ install -m 644 Weather/*.php %{buildroot}%{_datadir}/pear/Services/Weather/
 
 * Thu Jan 20 2005 Pascal Terjan <pterjan@mandrake.org> 1.3.1-1mdk
 - First mdk package
+
 
