@@ -4,7 +4,7 @@
 
 Name:		php-pear-%{upstream_name}
 Version:	1.4.7
-Release:	1
+Release:	2
 Summary:	An interface to various online weather-services
 License:	PHP License
 Group:		Development/PHP
