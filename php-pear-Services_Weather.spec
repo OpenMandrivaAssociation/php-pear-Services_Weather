@@ -8,7 +8,7 @@ Version:	1.4.7
 Release:	12
 License:	PHP License
 Group:		Development/PHP
-Url:		http://pear.php.net/package/Services_Weather/
+Url:		https://pear.php.net/package/Services_Weather/
 Source0:	http://download.pear.php.net/package/Services_Weather-%{version}.tgz
 BuildArch:	noarch
 BuildRequires:	php-pear
